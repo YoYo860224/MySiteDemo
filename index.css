@@ -1,0 +1,77 @@
+body{
+    background-image: url("scene.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.alpha{
+    height: 98vh;
+    background-color: rgba(174, 211, 209, 0.452);
+}
+.clear{
+    margin:  1vh 1vh 1vh  1vh;
+}
+.box{
+    height: 40vh;
+    width: 15vw;
+    background-color: rgba(14, 192, 216, 0.555);
+    margin-top: 6.6vh;
+    margin-left: 7vw;
+    display: inline-block;
+    border-radius: 15px;
+    transition: transform 1s;
+}
+.pic{
+    width: 5vw;
+    height: 5vw;
+    margin-left: 5vw;
+    margin-top: calc(20vh - 2.5vw);
+    position: absolute;
+}
+.noline{
+    text-decoration: none !important; 
+}
+@font-face{
+    font-family: ARCARTER;
+    src: url("ARCARTER.ttf");
+}
+.text{
+    width: 15vw;
+    height: 5vh;
+    font-size: 4vh;
+    font-family: ARCARTER;
+    background-color: rgba(14, 192, 216, 0.777);
+    position: absolute;
+    margin-top: 35vh;
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+    color: black;
+}
+.box:hover{
+    /* transform: rotate(360deg) scale(1.2) ; */
+    /* transform: scale(0.5); */
+    /* transform: translate(10px,10px); */
+    /* transform: skew(50deg); */
+    animation: myshake 0.3s infinite;
+}
+@keyframes myshake{
+    0%{
+        transform: rotate(0deg);
+        background-color: rgba(14, 192, 216, 0.777);
+    }
+    25%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(0deg);
+        background-color: rgba(14, 150, 219, 0.87);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        background-color: rgba(14, 192, 216, 0.777);
+    }
+}
