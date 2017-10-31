@@ -52,8 +52,8 @@ body{
     /* transform: rotate(360deg) scale(1.2) ; */
     /* transform: scale(0.5); */
     /* transform: translate(10px,10px); */
-    transform: skew(50deg);
-    /* animation: myshake 0.3s infinite; */
+    /* transform: skew(50deg); */
+    animation: myshake 0.3s infinite;
 }
 @keyframes myshake{
     0%{
